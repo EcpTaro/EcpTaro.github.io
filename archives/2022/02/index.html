@@ -207,7 +207,11 @@
     
     <!-- 谷歌统计  -->
     
-<meta name="generator" content="Hexo 5.4.1"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.4.1"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
 </head>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
@@ -429,25 +433,40 @@
             
         
         <article class="index-post">
-            <a class="abstract-title" href="/2022/02/09/hello-world/">
+            <a class="abstract-title" href="/2022/02/09/Hexo%E6%96%87%E7%AB%A0%E6%92%B0%E5%86%99%E4%B8%8EMarkDown%E8%AF%AD%E6%B3%95/">
                 
-                <span class="abstract-title-text">Hello World</span>
+                <span class="abstract-title-text">Hexo文章撰写与MarkDown语法</span>
             </a>
             <div class="abstract-content">
-                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
+                创建文章hexo根目录下打开控制台或git bash，输入以下命令创建文章，其中title为文章标题
+1$ hexo new &quot;title&quot;
 
-More info: Writing
-Run server1$ hexo ...
+例如
+1$ hexo new &quot;Hexo语法&quot;
+
+创建成功后，会在source/_post文件夹下创建一个文件，命名为title.md，随后用Typora进行编辑即可编写文章。
+编写文章（基于MarkDown）MarkDown简介
+Markdown 是一种可以使用普通文本编辑器编写的 标记语言，通过简单的 标记语法，它可以使普通文本内容具有一定的格式
+基于 Markdown 语法的简洁性，它已经成为目前世界...
             </div>
             <!-- read more -->
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2022/02/09">
+                <div class="abstract-date" title="Last updated: 2022/02/10">
                     <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2022/02/09</span>
                 </div>
                 <!-- tags -->
+                
+                    <div class= abstract-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="Hexo编写">Hexo编写</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="MarkDown语法">MarkDown语法</a>
+    
+</div>
+
                 
             </div>
         </article>
@@ -589,7 +608,7 @@ Run server1$ hexo ...
         
         <li class="archive-post-item">
             <span class="archive-post-date">02/09</span>
-            <a class="archive-post-title" href="/2022/02/09/hello-world/">Hello World</a>
+            <a class="archive-post-title" href="/2022/02/09/Hexo%E6%96%87%E7%AB%A0%E6%92%B0%E5%86%99%E4%B8%8EMarkDown%E8%AF%AD%E6%B3%95/">Hexo文章撰写与MarkDown语法</a>
         </li>
     
     </div>
@@ -597,6 +616,16 @@ Run server1$ hexo ...
 
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
+        
+            <span class="sidebar-tag-name" data-tags="Hexo编写">
+                <span class="iconfont-archer">&#xe606;</span>
+                Hexo编写
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="MarkDown语法">
+                <span class="iconfont-archer">&#xe606;</span>
+                MarkDown语法
+            </span>
         
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
@@ -608,6 +637,11 @@ Run server1$ hexo ...
 
         <div class="sidebar-panel-categories">
     <div class="sidebar-categories-name">
+    
+        <span class="sidebar-category-name" data-categories="Study Notes">
+            <span class="iconfont-archer">&#xe60a;</span>
+            Study Notes
+        </span>
     
     </div>
     <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
